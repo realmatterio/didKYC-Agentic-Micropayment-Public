@@ -38,7 +38,7 @@ As the AI Agent economy grows rapidly, standalone wallet models and traditional 
 - Lack of programmable and verifiable authorization mechanisms
 - Difficulty balancing offline operations, compliance auditability, and autonomy
 
-Using W3C DID and VC standards, together with a permissioned blockchain (Besu), **didKYC Agentic Micropayment Wallet** provides a complete Hong Kong-oriented compliance solution centered on an agent-friendly wallet bridge.
+Using W3C DID and VC standards, together with zero-knowledge proofs, **didKYC Agentic Micropayment Wallet** provides a complete Hong Kong-oriented compliance solution centered on an agent-friendly wallet bridge.
 
 ---
 
@@ -67,7 +67,7 @@ Hybrid custody separates higher-value storage from autonomous execution. A hoste
 The cold-wallet model preserves clear human ownership over root keys and final authority. Agents do not hold unrestricted owner keys; they operate through policy-constrained delegated signing rights. This keeps automation accountable to human intent and governance.
 
 - **Why didKYC (VC-Verifiable Identity)**  
-didKYC uses DID + VC as a verifiable, reusable identity trust layer. Instead of repeatedly exposing full identity records, the system verifies required attributes cryptographically, enabling privacy-aware compliance checks and machine-verifiable authorization.
+didKYC uses DID + VC as a verifiable, zero-knowledge-proof identity trust layer. Instead of repeatedly exposing full identity records, the system verifies required attributes cryptographically, enabling privacy-aware compliance checks and machine-verifiable authorization.
 
 - **Why Micropayment (Agent-to-Agent Economy)**  
 Agent ecosystems increasingly require frequent, low-value settlement across services, APIs, and autonomous workflows. Micropayments fit agent-to-agent collaboration by reducing transaction friction, enabling granular pay-per-action pricing, and supporting programmable recurring value exchange.
@@ -107,7 +107,7 @@ The two custody layers are connected seamlessly through a unified DID mechanism 
 - The AI Agent holds the corresponding DID-based delegated authorization for policy-bounded payment execution.
 
 **Advantages**:
-- Decentralized and privacy-preserving (Selective Disclosure)
+- Decentralized, privacy-preserving, and enabled by zero-knowledge proofs (selective disclosure).
 - Cross-platform verifiability without repeatedly submitting identity data
 - Aligned with HKMA's direction on digital identity and DLT development
 

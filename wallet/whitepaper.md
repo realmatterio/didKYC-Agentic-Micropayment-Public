@@ -18,6 +18,8 @@
 
 ---
 
+![didKYC Wallet Cover](Frontpage%20of%20Real%20Matter%20Wallet%20%28Stablecoin%20with%20Agentic%20Micro-Payment%29%20-%202026APR.png)
+
 ## Executive Summary
 **didKYC Agentic Micropayment Wallet** is an innovative hybrid e-wallet that combines **DID (Decentralized Identifier)** and **VC (Verifiable Credential)** technologies to deliver a truly decentralized, verifiable, and privacy-friendly eKYC system (referred to as didKYC).
 

@@ -1,0 +1,37 @@
+flowchart TD
+  HO[Human Owner]
+  EK[eKYC Provider]
+  HC[Hosted Custody Layer]
+  TF[Daily Transfer Controller]
+  CW[didKYC Self-Custody Cold Wallet]
+  AG[AI Agent]
+  APB[Agentic Payment Button]
+  PS[Payment Skill Parser]
+  VE[DID VC Verification Service]
+  PE[Policy Engine]
+  SC[Policy Smart Contract]
+  BS[Hyperledger Besu]
+  AT[Audit Orchestrator]
+  OS[Off-chain Secure Store]
+  JF[JFIU STR Workflow]
+
+  HO --> EK
+  EK --> CW
+  HO --> HC
+  HC --> TF
+  TF --> CW
+
+  AG --> APB
+  AG --> PS
+  AG --> VE
+  VE --> PE
+  PE --> AG
+  AG --> SC
+  SC --> BS
+
+  BS --> AT
+  VE --> AT
+  PE --> AT
+  AT --> BS
+  AT --> OS
+  PE --> JF

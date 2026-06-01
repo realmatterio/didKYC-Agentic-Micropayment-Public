@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980">
+  <defs>
+    <style>
+      .title { font: 700 30px 'Segoe UI', Arial, sans-serif; fill: #102a43; }
+      .label { font: 600 16px 'Segoe UI', Arial, sans-serif; fill: #243b53; }
+      .text { font: 14px 'Segoe UI', Arial, sans-serif; fill: #334e68; }
+      .zone { fill: #f8fbff; stroke: #9fb3c8; stroke-width: 2; }
+      .node { fill: #ffffff; stroke: #486581; stroke-width: 2; rx: 12; ry: 12; }
+      .node-critical { fill: #eef4ff; stroke: #1f4b99; }
+      .node-control { fill: #ecfff5; stroke: #2f855a; }
+      .arrow { stroke: #334e68; stroke-width: 2.4; fill: none; marker-end: url(#arrowhead); }
+      .small { font: 12px 'Segoe UI', Arial, sans-serif; fill: #486581; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#334e68" />
+    </marker>
+  </defs>
+
+  <text x="40" y="52" class="title">didKYC Agentic Micropayment Wallet - Technical Architecture</text>
+
+  <rect x="30" y="90" width="500" height="360" class="zone"/>
+  <text x="50" y="120" class="label">User Domain</text>
+
+  <rect x="70" y="150" width="180" height="70" class="node"/>
+  <text x="95" y="192" class="text">Human Owner</text>
+
+  <rect x="290" y="150" width="200" height="70" class="node"/>
+  <text x="340" y="192" class="text">AI Agent</text>
+
+  <rect x="70" y="270" width="230" height="90" class="node node-critical"/>
+  <text x="88" y="306" class="text">didKYC Cold Wallet</text>
+  <text x="88" y="328" class="small">DID refs + VC proof material</text>
+
+  <rect x="320" y="270" width="170" height="90" class="node"/>
+  <text x="338" y="306" class="text">Delegated Key</text>
+  <text x="338" y="328" class="small">policy-constrained</text>
+
+  <rect x="560" y="90" width="500" height="360" class="zone"/>
+  <text x="580" y="120" class="label">Agent-Friendly Payment Gateway</text>
+
+  <rect x="600" y="150" width="190" height="70" class="node"/>
+  <text x="615" y="192" class="text">Agentic Payment Button</text>
+
+  <rect x="820" y="150" width="200" height="70" class="node"/>
+  <text x="848" y="192" class="text">payment_skill parser</text>
+
+  <rect x="600" y="270" width="190" height="90" class="node node-control"/>
+  <text x="615" y="306" class="text">DID/VC Verifier</text>
+
+  <rect x="820" y="270" width="200" height="90" class="node node-control"/>
+  <text x="855" y="306" class="text">Policy Engine</text>
+  <text x="848" y="328" class="small">limits + allow-list</text>
+
+  <rect x="600" y="380" width="420" height="50" class="node node-control"/>
+  <text x="760" y="412" class="text">Audit Orchestrator</text>
+
+  <rect x="30" y="490" width="500" height="220" class="zone"/>
+  <text x="50" y="520" class="label">Hosted Custody Layer</text>
+
+  <rect x="70" y="550" width="220" height="70" class="node node-critical"/>
+  <text x="95" y="592" class="text">Hosted Custody (HKD &lt;= 3000)</text>
+
+  <rect x="320" y="550" width="180" height="70" class="node node-control"/>
+  <text x="334" y="592" class="text">Daily Transfer</text>
+
+  <rect x="560" y="490" width="500" height="220" class="zone"/>
+  <text x="580" y="520" class="label">Permissioned Ledger</text>
+
+  <rect x="600" y="550" width="200" height="70" class="node node-critical"/>
+  <text x="635" y="592" class="text">Hyperledger Besu</text>
+
+  <rect x="820" y="550" width="200" height="70" class="node"/>
+  <text x="854" y="592" class="text">Policy Contract</text>
+
+  <rect x="1090" y="90" width="470" height="620" class="zone"/>
+  <text x="1110" y="120" class="label">RegTech / External</text>
+
+  <rect x="1130" y="170" width="190" height="70" class="node"/>
+  <text x="1180" y="212" class="text">eKYC Provider</text>
+
+  <rect x="1340" y="170" width="180" height="70" class="node"/>
+  <text x="1368" y="212" class="text">JFIU STR Flow</text>
+
+  <rect x="1130" y="290" width="390" height="90" class="node"/>
+  <text x="1235" y="325" class="text">Off-chain Secure Evidence Store</text>
+
+  <line x1="250" y1="185" x2="1130" y2="205" class="arrow"/>
+  <text x="620" y="176" class="small">initial eKYC</text>
+
+  <line x1="1225" y1="240" x2="210" y2="270" class="arrow"/>
+  <text x="660" y="262" class="small">VC bound to DID</text>
+
+  <line x1="250" y1="185" x2="180" y2="550" class="arrow"/>
+  <text x="120" y="430" class="small">top-up</text>
+
+  <line x1="290" y1="585" x2="320" y2="585" class="arrow"/>
+  <line x1="500" y1="585" x2="300" y2="315" class="arrow"/>
+  <text x="420" y="470" class="small">daily authorized transfer</text>
+
+  <line x1="490" y1="185" x2="600" y2="185" class="arrow"/>
+  <line x1="490" y1="185" x2="820" y2="185" class="arrow"/>
+  <line x1="490" y1="185" x2="600" y2="315" class="arrow"/>
+  <line x1="490" y1="315" x2="320" y2="315" class="arrow"/>
+
+  <line x1="790" y1="315" x2="820" y2="315" class="arrow"/>
+  <line x1="820" y1="315" x2="490" y2="185" class="arrow"/>
+
+  <line x1="490" y1="185" x2="820" y2="585" class="arrow"/>
+  <line x1="1020" y1="585" x2="800" y2="585" class="arrow"/>
+  <line x1="800" y1="585" x2="600" y2="585" class="arrow"/>
+
+  <line x1="700" y1="360" x2="700" y2="380" class="arrow"/>
+  <line x1="920" y1="360" x2="920" y2="380" class="arrow"/>
+  <line x1="700" y1="430" x2="700" y2="550" class="arrow"/>
+  <line x1="920" y1="430" x2="1220" y2="290" class="arrow"/>
+  <line x1="920" y1="430" x2="1340" y2="205" class="arrow"/>
+</svg>

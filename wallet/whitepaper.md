@@ -1,5 +1,6 @@
 # didKYC Agentic Micropayment Wallet
-### Agent-Friendly Wallet Technology: A Bridge Between Human-Controlled Wallets and KYC-Enabled Agentic Micropayments
+### Agent-Friendly Wallet Technology: 
+#### A Bridge Between Human-Controlled Wallets and KYC-Enabled Agentic Micropayments
 
 > **Version:** 1.0  
 > **Release Date:** May 2026  
@@ -22,7 +23,7 @@
 ![didKYC Wallet Cover](Frontpage%20of%20Real%20Matter%20Wallet%20%28Stablecoin%20with%20Agentic%20Micro-Payment%29%20-%202026APR.png)
 
 ## Executive Summary
-**didKYC Agentic Micropayment Wallet** is an **agent-friendly wallet bridge** that connects a human-controlled wallet model with KYC-enabled agentic micropayment execution. The design combines **DID (Decentralized Identifier)** and **VC (Verifiable Credential)** technologies so AI agents can act autonomously under explicit human and policy boundaries.
+**didKYC Agentic Micropayment Wallet** is an **agent-friendly wallet bridge** that connects a human-controlled wallet model with KYC-enabled agentic micropayment execution. The design combines **DID (Decentralized Identifier)** and **ZKP-VC (Zero-Knowledge-Proof Verifiable Credential)** technologies so AI agents can act autonomously under explicit human and policy boundaries.
 
 The product adopts a **Hybrid Custody** architecture:
 - **Hosted Custody Layer**: Based on a permissioned blockchain (Hyperledger Besu), with a maximum stored value of HK$3,000.

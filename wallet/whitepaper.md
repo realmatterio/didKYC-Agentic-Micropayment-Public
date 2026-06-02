@@ -11,7 +11,7 @@
 2. [Introduction and Problem Statement](#1-introduction-and-problem-statement)
 3. [Business Case](#2-business-case)
 4. [Why This Bridge Model](#3-why-this-bridge-model)
-5. [Product Architecture](#4-product-architecture)
+5. [Agent-Wallet-Custody-Gateway Architecture](#4-agent-wallet-custody-gateway-architecture)
 6. [didKYC Implementation Method (DID + VC Core)](#5-didkyc-implementation-method-did--vc-core)
 7. [Agentic Payment Transaction Flow](#6-agentic-payment-transaction-flow)
 8. [FinTech and RegTech Integration](#7-fintech-and-regtech-integration)
@@ -75,7 +75,7 @@ Agent ecosystems increasingly require frequent, low-value settlement across serv
 
 ---
 
-## 4. Product Architecture
+## 4. Agent-Wallet-Custody-Gateway Architecture
 The didKYC Agentic Micropayment Wallet uses a Hybrid Custody + Agent-Friendly Payment Gateway design, specifically for AI Agentic Payments. The core architecture has three parts:
 
 - **Hosted Custody Layer** (based on Hyperledger Besu)  

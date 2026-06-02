@@ -1,5 +1,5 @@
 # didKYC Agentic Micropayment Wallet
-## Agent-Friendly Wallet Technology: A Bridge Between Human-Controlled Wallets and KYC-Enabled Agentic Micropayments
+### Agent-Friendly Wallet Technology: A Bridge Between Human-Controlled Wallets and KYC-Enabled Agentic Micropayments
 
 > **Version:** 1.0  
 > **Release Date:** May 2026  

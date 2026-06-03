@@ -51,7 +51,7 @@ Agentic Commerce is becoming a mainstream payment trend in 2026. As a fintech hu
 1. **API and AI Service Pay-per-Use**: AI agents pay per request for LLM inference, data queries, or real-time market information.
 2. **Recurring Cloud Supply Chain Auto-Payments**: AI agents automatically process recurring fees to cloud providers, such as webcam cloud analytics and storage.
 3. **Agent-to-Agent Collaboration Marketplaces**: Different AI agents complete subtasks and settle compensation automatically.
-4. **Autonomous Commercial IoT Agents**: Business planning, price comparison, automatic ordering, and payment.
+4. **AI-IoT Agents**: Autonomous Commercial Business planning, price comparison, automatic ordering, and payment.
 5. **GenAI Content Micropayments**: Paying for single articles, videos, or premium datasets beyond paywalls.
 
 **Business Value**: Low transaction fees with strong recurring-revenue potential.

@@ -159,7 +159,7 @@ For the **Hosted Layer**, licensing and exemption eligibility (including any low
 ---
 
 ## Appendices
-- Technical architecture diagram (PNG): [technical_architecture_diagram.png](technical_architecture_diagram.png) (Mermaid): [technical_architecture_diagram.mmd](technical_architecture_diagram.mmd)
-- DID/VC flow diagram (PNG): [did_vc_flow_diagram.png](did_vc_flow_diagram.png) (Mermaid): [did_vc_flow_diagram.mmd](did_vc_flow_diagram.mmd)
+- Technical architecture diagram: [technical_architecture_diagram.png](technical_architecture_diagram.png) (PNG) [technical_architecture_diagram.mmd](technical_architecture_diagram.mmd) (Mermaid) 
+- DID/VC flow diagram: [did_vc_flow_diagram.png](did_vc_flow_diagram.png) (PNG): [did_vc_flow_diagram.mmd](did_vc_flow_diagram.mmd) (Mermaid) 
 - Payment skill specification: [payment_skill.md](payment_skill.md)
 - Risk assessment summary: [risk_assessment.md](risk_assessment.md)

@@ -20,7 +20,7 @@
 
 ---
 
-![didKYC Wallet Cover](Frontpage%20of%20Real%20Matter%20Wallet%20%28Stablecoin%20with%20Agentic%20Micro-Payment%29%20-%202026APR.png)
+![didKYC Wallet Cover](Frontpage%20of%20Real%20Matter%20didKYC.png)
 
 ## Executive Summary
 **didKYC Agentic Micropayment Wallet** is an **agent-friendly wallet bridge** that connects a human-controlled wallet model with KYC-enabled agentic micropayment execution. The design combines **DID (Decentralized Identifier)** and **ZKP-VC (Zero-Knowledge-Proof Verifiable Credential)** technologies so AI agents can act autonomously under explicit human and policy boundaries.
@@ -51,7 +51,7 @@ Agentic Commerce is becoming a mainstream payment trend in 2026. As a fintech hu
 1. **API and AI Service Pay-per-Use**: AI agents pay per request for LLM inference, data queries, or real-time market information.
 2. **Recurring Cloud Supply Chain Auto-Payments**: AI agents automatically process recurring fees to cloud providers, such as webcam cloud analytics and storage.
 3. **Agent-to-Agent Collaboration Marketplaces**: Different AI agents complete subtasks and settle compensation automatically.
-4. **Autonomous Commercial IoT Agents**: Business planning, price comparison, automatic ordering, and payment.
+4. **AI-IoT Agents**: Autonomous commercial business planning, price comparison, automatic ordering, and payment.
 5. **GenAI Content Micropayments**: Paying for single articles, videos, or premium datasets beyond paywalls.
 
 **Business Value**: Low transaction fees with strong recurring-revenue potential.
@@ -159,7 +159,7 @@ For the **Hosted Layer**, licensing and exemption eligibility (including any low
 ---
 
 ## Appendices
-- Technical architecture diagram (SVG): [technical_architecture_diagram.svg](technical_architecture_diagram.svg) (Mermaid): [technical_architecture_diagram.mmd](technical_architecture_diagram.mmd)
-- DID/VC flow diagram (SVG): [did_vc_flow_diagram.svg](did_vc_flow_diagram.svg) (Mermaid): [did_vc_flow_diagram.mmd](did_vc_flow_diagram.mmd)
+- Technical architecture diagram: [technical_architecture_diagram.png](technical_architecture_diagram.png) (PNG) [technical_architecture_diagram.mmd](technical_architecture_diagram.mmd) (Mermaid) 
+- DID/VC flow diagram: [did_vc_flow_diagram.png](did_vc_flow_diagram.png) (PNG): [did_vc_flow_diagram.mmd](did_vc_flow_diagram.mmd) (Mermaid) 
 - Payment skill specification: [payment_skill.md](payment_skill.md)
 - Risk assessment summary: [risk_assessment.md](risk_assessment.md)

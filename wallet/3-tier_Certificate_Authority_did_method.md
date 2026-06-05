@@ -1,4 +1,4 @@
-# did_identity-address-credential_vc-verification Method
+# DID identity - Address - Credential VC - Verification Method
 ## 3-tier Certificate Authority
 
 ## Purpose

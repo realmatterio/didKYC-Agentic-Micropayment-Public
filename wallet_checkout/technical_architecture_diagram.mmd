@@ -1,0 +1,87 @@
+flowchart LR
+  subgraph U[Trust Agent Wallet Domain]
+    HO[Human Owner]
+    AG[AI Agent Runtime]
+    CW[didKYC Cold Wallet]
+    T3[Tier 3 Wallet CA]
+    T4[Tier 4 Session Cert 1-24h]
+  end
+
+  subgraph C[Hosted Custody Domain]
+    HC[Hosted Custody HKD 3000 max]
+    DT[Daily Transfer Controller HKD 100 max]
+  end
+
+  subgraph P[PKI Trust Hierarchy]
+    T1[Tier 1 Root CA Offline HSM]
+    T2[Tier 2 Issuing CA Shared Per-Region]
+  end
+
+  subgraph G[Trust Agent Payment Gateway Domain]
+    APB[Agentic Payment Button]
+    PS[payment_skill parser]
+    AP2[AP2-MCP Checkout Control Plane]
+    VE[Dual Verifier PKI Chain and DID/VC]
+    PE[Policy Engine]
+    HSM[Wallet HSM ICCHSMatter]
+    AO[Audit Orchestrator]
+    RR[Revocation Registry]
+    BR[Besu Relay]
+  end
+
+  subgraph L[Permissioned Ledger Domain]
+    SC[Policy Smart Contract]
+    BS[Hyperledger Besu]
+  end
+
+  subgraph R[RegTech and External Domain]
+    EK[eKYC Issuer]
+    OS[Offchain Evidence Store]
+    JF[JFIU STR Workflow]
+  end
+
+  HO -- initial eKYC --> EK
+  EK -- KYC result --> T2
+  T1 -- signs --> T2
+  T2 -- signs Wallet CA and issues User VC and Wallet VC --> T3
+  T3 -- installed in --> CW
+  T3 -- signs --> T4
+  T4 -- used by --> AG
+
+  HO -- top up --> HC
+  HC --> DT
+  DT -- daily transfer --> CW
+
+  AG -- open checkout --> APB
+  AG -- load skill --> PS
+  AG -- preflight ap2.verify_mandate --> AP2
+  AP2 -- validate chain DID VC --> VE
+  VE -- check revocation OCSP/CRL --> RR
+  VE -- verification result --> PE
+  PE -- allow or deny with reason codes --> AP2
+  AP2 -- preflight decision --> AG
+
+  AG -- execute ap2.pay --> AP2
+  AP2 -- re-validate fail-closed --> PE
+  AP2 -- server-side sign request --> HSM
+  HSM -- signed raw transaction --> AP2
+  AP2 -- eth_sendRawTransaction --> BR
+  BR --> SC
+  SC --> BS
+  BS -- tx hash and settlement event --> AP2
+  AP2 -- execution result and tx hash --> AG
+
+  VE -- verification log --> AO
+  PE -- policy decision log --> AO
+  AP2 -- request and response metadata --> AO
+  AO -- hash proof --> BS
+  AO -- protected refs --> OS
+  PE -- suspicious alert --> JF
+
+  classDef critical fill:#eaf2ff,stroke:#1f4b99,stroke-width:1.5px,color:#102a56;
+  classDef control fill:#ecfff5,stroke:#2f855a,stroke-width:1.5px,color:#1b4332;
+  classDef pki fill:#fff8e1,stroke:#c8922a,stroke-width:1.5px,color:#5d3a00;
+
+  class CW,HC,BS critical;
+  class AP2,VE,PE,HSM,AO,DT,RR,BR control;
+  class T1,T2,T3,T4 pki;

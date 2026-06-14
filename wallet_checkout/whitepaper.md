@@ -88,7 +88,7 @@ For security and custody-boundary clarity, the owner's root private key remains 
 - **AI Agentic Payment via a Trust Agent Payment Gateway**  
 The Payment Gateway provides a trust-agent-compatible interface, including:
    - Agentic Payment Button: a WebMCP HTML button with embedded structured and machine-readable attributes.
-   - [payment_skill.md](../agentic-checkout/payment_skill.md) instruction document: machine-readable guidance for AI Agents to understand payment flow, API endpoints, and requirements.
+   - [payment_skill.md](payment_skill.md) instruction document: machine-readable guidance for AI Agents to understand payment flow, API endpoints, and requirements.
    - AP2-MCP Checkout Control Plane: two mandatory operations, preflight verification (`ap2.verify_mandate`) and policy-enforced execution (`ap2.pay`).
    - DID + VC verification channel: the Agent must complete didKYC verification before payment is triggered.
    - AP2-style signed mandate channel: each payment request must map to a valid cryptographically signed user mandate.
@@ -137,7 +137,7 @@ For the full technical specification of the CA hierarchy, DID/VC binding rules, 
 2. **Daily Authorized Transfer**: According to policy, the system transfers a limited amount daily (<= HK$100) into the didKYC Self-Custody Cold Wallet.
 3. **AI Agent Initiates Payment**:
    - 3.1 The Agent connects to the Payment Gateway's **Agentic Payment Button** (special HTML code).
-   - 3.2 The Agent automatically reads the [payment_skill.md](../agentic-checkout/payment_skill.md) guide to understand payment protocol requirements.
+   - 3.2 The Agent automatically reads the [payment_skill.md](payment_skill.md) guide to understand payment protocol requirements.
    - 3.3 The Agent submits its Tier 4 session certificate chain plus DID proof, VC presentation, and AP2-style signed mandate to the Payment Gateway using `ap2.verify_mandate`.
    - 3.4 The Payment Gateway performs **binding verification**: (a) validates the full PKI cert chain from Tier 4 to Tier 1 and checks revocation status, (b) verifies DID integrity, VC signature, credential status, and identity bindings, and (c) verifies mandate signature, nonce, validity window, and scope constraints.
    - 3.5 The Policy Engine evaluates daily limit, merchant whitelist, delegated scope, mandate constraints, replay resistance, and anomaly signals.
@@ -164,7 +164,7 @@ The checkout execution model is Policy-Enforced Agentic Checkout via AP2-MCP wit
 - **Permissioned Blockchain**: Hyperledger Besu is used as the core ledger, providing high performance, low fee overhead, and enterprise-grade governance.
 - **Programmable Policy**: Smart contracts and policy services enforce spending rules.
 - **Execution Mediation**: Agent checkout execution is mediated by AP2-MCP; signing is performed by Wallet HSM (ICCHSMatter) and broadcast is performed via approved relay routes.
-- **Agentic Interface**: Traditional payment button + dedicated Agentic Payment Button + [payment_skill.md](../agentic-checkout/payment_skill.md) guidance for automated AI-agent execution.
+- **Agentic Interface**: Traditional payment button + dedicated Agentic Payment Button + [payment_skill.md](payment_skill.md) guidance for automated AI-agent execution.
 - **Intent Contract Layer**: AP2-style signed mandates provide verifiable user intent, bounded authority, and replay-resistant payment authorization.
 
 **RegTech Side**:

@@ -195,7 +195,7 @@ For the **Hosted Layer**, licensing and exemption eligibility (including any low
 - didKYC CA-Bound Certificate Identity and Policy-Enforced Checkout Architecture:[didKYC_ca_bound_identity_address_verification_architecture.md](didKYC_ca_bound_identity_address_verification_architecture.md)
 - Technical architecture diagram: 
 [technical_architecture_diagram.png](technical_architecture_diagram.png) (mermaid)
-- DID/VC flow diagram: 
-[did_vc_flow_diagram.png](did_vc_flow_diagram.png) (mermaid)
-- Payment skill specification: [payment_skill.md](payment_skill.md)
+- didKYC agentic payment flow: 
+[didkyc_agentic_payment.png](didkyc_agentic_payment.png) (mermaid)
+- Payment skill specification: [payment_skill.md](../agentic-checkout/payment_skill.md)
 - Risk assessment summary: [risk_assessment.md](risk_assessment.md)

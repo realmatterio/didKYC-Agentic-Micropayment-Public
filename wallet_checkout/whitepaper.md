@@ -197,5 +197,5 @@ For the **Hosted Layer**, licensing and exemption eligibility (including any low
 [technical_architecture_diagram.png](technical_architecture_diagram.png) (mermaid)
 - DID/VC flow diagram: 
 [did_vc_flow_diagram.png](did_vc_flow_diagram.png) (mermaid)
-- Payment skill specification: [payment_skill.md](../agentic-checkout/payment_skill.md)
+- Payment skill specification: [payment_skill.md](payment_skill.md)
 - Risk assessment summary: [risk_assessment.md](risk_assessment.md)

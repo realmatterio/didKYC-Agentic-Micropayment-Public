@@ -1,6 +1,6 @@
 # Agentic Micropayment Wallet and Checkout
-### Trust Agent Wallet and AP2-MCP Checkout Technology
-#### A CA-Bound Identity, DID-KYC-Verified Bridge Between Human-Controlled Wallets and Policy-Enforced Agentic Checkout Micropayments
+### A CA-Bound Identity, DID-KYC-Verified Bridge Between Human-Controlled Wallets and Policy-Enforced Agentic Checkout Micropayments
+#### Trust Agent Wallet and AP2-MCP Checkout Technology
 
 > **Version:** 1.0  
 > **Release Date:** May 2026  

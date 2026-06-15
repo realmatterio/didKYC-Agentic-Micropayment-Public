@@ -23,13 +23,13 @@
 ![didKYC Wallet Cover](Frontpage%20of%20Real%20Matter%20Wallet%20(Stablecoin%20with%20Agentic%20Micro-Payment)%20-%202026APR.png)
 
 ## Executive Summary
-**Agentic Micropayment Wallet and Checkout** is a **trust-agent wallet and checkout bridge** that connects a human-controlled wallet model with KYC-enabled agentic micropayment execution. The design combines **DID (Decentralized Identifier)** and **ZKP-VC (Zero-Knowledge-Proof Verifiable Credential)** technologies so AI agents can act autonomously under explicit human and policy boundaries.
+**Agentic Micropayment Wallet and Checkout** is a **trust-agent wallet and checkout bridge** that connects a human-controlled wallet model with KYC-enabled agentic micropayment execution. The design combines **DID (Decentralized Identifier)** and **eKYC-VC (Verifiable Credential)** technologies so AI agents can act autonomously under explicit human and policy boundaries.
 
 The product adopts a **Hybrid Custody** architecture:
-- **Hosted Custody Layer**: Based on a permissioned blockchain (Hyperledger Besu), with a maximum stored value of HK$3,000.
-- **didKYC Self-Custody Cold Wallet Layer**: Daily transaction cap of HK$100, focused on DID + VC verification.
+- **Hosted Custody Layer**: Based on a permissioned blockchain (Besu) hosted by a payment gateway, with a maximum stored value of HK$3,000.
+- **didKYC Self-Custody Cold Wallet Layer**: Daily transaction cap of HK$100 held by a human, focused on DID + VC verification.
 
-Before any Agentic Payment is executed, the AI Agent must first complete **didKYC identity verification** (VC verification) with the Payment Gateway. In this model, checkout execution is **Policy-Enforced Agentic Checkout via AP2-MCP**, where verification and execution are fail-closed and fully auditable. This bridge design significantly improves autonomy, security, and compliance, and is suitable for high-frequency AI-agent micropayments.
+Before any Agentic Payment is executed, the AI Agent must first complete **didKYC identity verification** with the Payment Gateway. In this model, checkout execution is **Policy-Enforced Agentic Checkout via AP2-MCP**, where verification and execution are fail-closed and fully auditable. This bridge design significantly improves autonomy, security, and compliance, and is suitable for high-frequency AI-agent micropayments.
 
 ---
 

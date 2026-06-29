@@ -20,7 +20,7 @@
 
 ---
 
-![didKYC Wallet Cover](Frontpage%20of%20Real%20Matter%20Wallet%20(Stablecoin%20with%20Agentic%20Micro-Payment)%20-%202026APR.png)
+![didKYC Wallet Cover](Showcasing_Agentic_Micropayment_Wallet_Chedckout_1920x1080.png)
 
 ## Executive Summary
 **Agentic Micropayment Wallet and Checkout** is a **trust-agent wallet and checkout bridge** that connects a human-controlled wallet model with KYC-enabled agentic micropayment execution. The design combines **DID (Decentralized Identifier)** and **eKYC-VC (Verifiable Credential)** technologies so AI agents can act autonomously under explicit human and policy boundaries.
